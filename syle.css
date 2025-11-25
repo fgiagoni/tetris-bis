@@ -1,0 +1,85 @@
+:root{
+  --bg:#0f1720;
+  --panel:#0b1220;
+  --accent:#7dd3fc;
+  --muted:#94a3b8;
+  --block-gap:2px;
+}
+
+*{box-sizing:border-box;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071021 0%, #071728 100%);
+  color:#e6eef6;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+
+.wrap{
+  width:960px;
+  max-width:100%;
+  background:rgba(10,20,30,0.6);
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.7);
+}
+
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+
+h1{margin:0;font-size:20px}
+.meta{color:var(--muted);font-size:14px;display:flex;gap:12px;align-items:center}
+
+.game-area{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+#game{
+  background:linear-gradient(180deg,#071422 0%, #05202b 100%);
+  border-radius:8px;
+  box-shadow:inset 0 0 0 6px rgba(255,255,255,0.02);
+  image-rendering:pixelated;
+  width:300px;
+  height:600px;
+}
+
+.sidebar{
+  width:220px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+#next{
+  background:linear-gradient(180deg,#071422 0%, #05202b 100%);
+  border-radius:8px;
+  image-rendering:pixelated;
+  width:120px;
+  height:120px;
+  box-shadow:inset 0 0 0 4px rgba(255,255,255,0.02);
+}
+
+.controls{display:flex;gap:8px}
+button{
+  background:var(--panel);
+  color:var(--accent);
+  border:1px solid rgba(125,211,252,0.08);
+  padding:8px 12px;
+  border-radius:6px;
+  cursor:pointer;
+}
+button:hover{opacity:0.95}
+
+.hint{color:var(--muted);font-size:13px;margin-top:6px}
+
+footer{margin-top:14px;color:var(--muted);font-size:12px;text-align:right}
