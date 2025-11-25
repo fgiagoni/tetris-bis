@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tetris — tetris-bis</title>
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:title" content="Tetris — tetris-bis" />
+  <meta property="og:description" content="Gioca a Tetris direttamente nel browser — tetris-bis" />
+  <meta property="og:image" content="assets/social-share.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Tetris — tetris-bis</h1>
+      <div class="meta">
+        <div>Score: <span id="score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <section class="game-area">
+      <canvas id="game" width="300" height="600" aria-label="Tetris game"></canvas>
+
+      <aside class="sidebar">
+        <canvas id="next" width="120" height="120" aria-label="Next piece"></canvas>
+        <div class="controls">
+          <button id="start">Start</button>
+          <button id="pause">Pause</button>
+        </div>
+        <p class="hint">
+          Tasti: ◀ ▶ per spostare, ▲ per ruotare, ▼ per soft drop, Space per hard drop, P per pausa
+        </p>
+      </aside>
+    </section>
+
+    <footer>
+      <small>Repository: fgiagoni/tetris-bis — Licenza MIT</small>
+    </footer>
+  </main>
+
+  <script src="tetris.js" defer></script>
+</body>
+</html>
